@@ -144,7 +144,7 @@
   &kp Q      &kp W      &kp F         &kp P        &kp B         &kp J      &kp L            &kp U       &kp Y       AS(SQT)    
   &hm LGUI A &hm LALT R &hm LCTRL S   &hm LSHIFT T &kp G         &kp M      &hm RSHIFT N     &hm RCTRL E &hm RALT I  &hm RGUI O 
   &kp Z      &kp X      &kp C         &kp D        &kp V         &kp K      &kp H            AS(COMMA)   AS(DOT)     AS(FSLH)   
-                                  &lt FUN DEL  &lt MEDIA TAB &lt NUM BSPC   &lt MOUSE SPACE  &lt NAV RET &lt BT ESC 
+                     &lt MEDIA TAB &lt NUM BSPC   &lt BT ESC   &lt FUN DEL  &lt MOUSE SPACE  &lt NAV RET 
                         >;
                 };
                 BT {
@@ -157,7 +157,7 @@
    &trans     &trans     &trans     &trans     &trans         &trans        &trans        &trans       &trans        &bt BT_CLR
    &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans         &out OUT_USB  &bt BT_SEL 3  &bt BT_SEL 4 &trans        &ext_power EP_ON
    &trans     &trans     &trans     &trans     &trans         &out OUT_BLE  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &ext_power EP_OFF
-                                      	   &trans     &trans     &trans         &trans        &trans        &trans
+                         &trans     &trans     &trans         &trans        &trans        &trans
                         >;
                 };
 
@@ -185,7 +185,7 @@
     &trans     &trans     &trans     &trans     &trans         &trans   &trans       &trans       &trans      &trans     
     &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans         &trans   &kp C_VOL_UP &kp C_BRI_UP &kp C_PP    &kp C_NEXT 
     &trans     &trans     &trans     &trans     &trans         &trans   &kp C_VOL_DN &kp C_BRI_DN &kp C_PAUSE &kp C_PREV 
-                          	      &trans     &trans     &trans         &trans   &kp C_MUTE   &trans
+                   	      &trans     &trans     &trans         &trans   &kp C_MUTE   &trans
                         >;
                 };
                 
@@ -227,7 +227,7 @@
      &trans     &trans     &trans     &trans     &trans         &trans   &kp F1  &kp F2  &kp F3  &kp F4   
      &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans         &trans   &kp F5  &kp F6  &kp F7  &kp F8   
      &trans     &trans     &trans     &trans     &trans         &trans   &kp F9  &kp F10 &kp F11 &kp F12 
-                          	      &trans     &trans     &trans         &trans   &trans  &trans
+                           &trans     &trans     &trans         &trans   &trans  &trans
                         >;
                 };
         };

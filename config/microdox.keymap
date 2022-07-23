@@ -94,9 +94,10 @@
             key-positions = <9 29>;
             bindings = <&kp C_MUTE>;
         };        
-        
     };
+};
 
+/{
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -118,8 +119,10 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };  
-    };
-    
+    }; 
+};
+ 
+/{
    macros {
       ZMK_MACRO(u_m_1, wait-ms = <0>; bindings = <&kp KP_SLASH &kp KP_N5>;)
       ZMK_MACRO(u_m_2, wait-ms = <0>; bindings = <&kp KP_MINUS &kp KP_N5>;)

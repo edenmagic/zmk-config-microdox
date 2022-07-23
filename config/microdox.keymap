@@ -130,6 +130,7 @@
     };  
  };    
 
+/{
     keymap {
         compatible = "zmk,keymap";
 

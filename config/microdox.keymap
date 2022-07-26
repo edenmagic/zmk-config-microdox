@@ -146,7 +146,7 @@
   &kp Z      &kp X      &kp C         &kp D        &kp V         &kp K      &kp H            AS(COMMA)   AS(DOT)     AS(FSLH)   
                      &lt MEDIA DEL  &lt FUN TAB &lt NUM BSPC  &lt MOUSE SPACE &lt NAV RET  &lt BT ESC
                         >;
-                sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;        
+                sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;        
                         
                 };
                 BT {
@@ -176,7 +176,7 @@
                         &trans     &trans     &trans         &kp PLUS   &kp N0  &kp DOT
                         >;
                         
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LA(TAB) LA(LS(TAB))>; 
+                        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LA(LS(TAB)) LA(TAB)>; 
                 };
                 
                 MEDIA {
@@ -206,7 +206,7 @@
                         &trans     &trans     &trans         &trans   &trans     &trans
                         >;
                         
-                        sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB)) &inc_dec_kp LA(TAB) LA(LS(TAB))>; 
+                        sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB) &inc_dec_kp LA(LS(TAB)) LA(TAB)>; 
                 };
                 
                 MOUSE {

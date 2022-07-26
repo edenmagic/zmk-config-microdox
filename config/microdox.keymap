@@ -144,8 +144,10 @@
   &kp Q      &kp W      &kp F         &kp P        &kp B         &kp J      &kp L            &kp U       &kp Y       AS(SQT)    
   &hm LGUI A &hm LALT R &hm LCTRL S   &hm LSHIFT T &kp G         &kp M      &hm RSHIFT N     &hm RCTRL E &hm RALT I  &hm RGUI O 
   &kp Z      &kp X      &kp C         &kp D        &kp V         &kp K      &kp H            AS(COMMA)   AS(DOT)     AS(FSLH)   
-                     &lt MEDIA TAB &lt NUM BSPC &lt FUN DEL   &lt BT ESC &lt MOUSE SPACE  &lt NAV RET 
+                     &lt MEDIA DEL  &lt FUN TAB &lt NUM BSPC  &lt MOUSE SPACE &lt NAV RET  &lt BT ESC
                         >;
+                sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;        
+                        
                 };
                 BT {
 // -----------------------------------------------------------------------------------------

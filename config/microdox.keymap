@@ -219,10 +219,8 @@
    &kp KP_NUM &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans         &trans   &trans     &trans     &trans     &trans     
    &trans     &kp KP_N4  &kp KP_N2  &kp KP_N6  &trans         &trans   &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI   
    &trans     &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans         &trans   &trans     &trans     &trans     &trans     
-                         &u_m_2     &u_m_1     &u_m_3         &trans   &trans     &trans
+                         &u_m_2     &u_m_3     &u_m_1         &trans   &trans     &trans
                         >;
-                        
-                        sensor-bindings = <&inc_dec_kp LA(LS(TAB)) LA(TAB)>; 
                 };
                 
                 FUN {

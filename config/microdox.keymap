@@ -20,10 +20,6 @@
 
 #define AS(keycode) &as LS(keycode) keycode
 
-&caps_word {
-    continue-list = <UNDERSCORE BSPC>;
-};
-
 &lt { quick_tap_ms = <140>; };
 
 &sk {
@@ -44,7 +40,7 @@
         combo_esc {
             timeout-ms = <25>;
             key-positions = <3 4>;
-            bindings = <&kp ESC>;
+            bindings = <&gresc>;
         };
         
         combo_caps {
@@ -93,7 +89,19 @@
             timeout-ms = <25>;
             key-positions = <9 29>;
             bindings = <&kp C_MUTE>;
-        };        
+        };     
+        
+        combo_del {
+            timeout-ms = <25>;
+            key-positions = <31 32>;
+            bindings = <&kp DEL>;
+        };
+        
+        combo_esc {
+            timeout-ms = <25>;
+            key-positions = <33 35>;
+            bindings = <&gresc>;
+        };  
     };
 };
 
@@ -153,7 +161,7 @@
 //                         |      |     |     |     |     |     |   |     |     |     |     | BTCR |
 //                         | EPON |     |     |     |     |     |   |USBPR| BT4 | BT5 |     | EPON |
 //                         | EPOFF|     |     |     |     |     |   |BT PR| BT1 | BT2 | BT3 | EPOFF|
-//                                            |     |     |     |   |     |     |     |     |
+//                                            |     |     |     |   |     |     |     |     
                         bindings = <
    &trans     &trans     &trans     &trans     &trans         &trans        &trans        &trans       &trans        &bt BT_CLR
    &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans         &out OUT_USB  &bt BT_SEL 3  &bt BT_SEL 4 &trans        &ext_power EP_ON
@@ -167,12 +175,12 @@
 //                       |     |     |     |     |     |   |  [  |  7  |  8  |  9  |  -  | 
 //                       | GUI | ALT | CTL | SFT |     |   |  ]  |  4  |  5  |  6  |  *  | 
 //                       |     |     |     |     |     |   |  \  |  1  |  2  |  3  |  /  | 
-//                                   |     |     |     |   |  +  |  0  |  .  |     |
+//                                   |     |     |     |   |  +  |  0  |  .  |     
                         bindings = <
   &trans     &trans     &trans     &trans     &trans         AS(LBKT)   AS(N7)  AS(N8) AS(N9) &kp MINUS 
   &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans         AS(RBKT)   AS(N4)  AS(N5) AS(N6) &kp STAR  
   &trans     &trans     &trans     &trans     &trans         AS(BSLH)   AS(N1)  AS(N2) AS(N3) &kp FSLH 
-                        &trans     &trans     &trans         &kp PLUS   &kp N0  &kp DOT
+                        &trans     &trans     &trans         &kp N0     &kp DOT &kp PLUS   
                         >;
                         
                         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>; 
@@ -197,7 +205,7 @@
 //                           |     | HOME|  UP | END | INS |   |     |     |     |     |     |  
 //                           |     | LEFT| DOWN|RIGHT| CAPS|   |     | SFT | CTL | ALT | GUI |   
 //                           |     | PGUP| PGDN|     |PSCRN|   |     |     |     |     |     | 
-//                                       |     |     |     |   |     |     |     |     |
+//                                       |     |     |     |   |     |     |     |     
                         bindings = <
    &trans    &kp HOME   &kp UP     &kp END    &kp INS        &trans   &trans     &trans     &trans     &trans    
    &trans    &kp LEFT   &kp DOWN   &kp RIGHT  &kp CAPS       &trans   &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI 
@@ -210,7 +218,7 @@
                 
                 MOUSE {
 // -----------------------------------------------------------------------------------------
-//                        |      |     | MU  |     |     |     |   |     |     |     |     |     |      |
+//                        | NUML |     | MU  |     |     |     |   |     |     |     |     |     |      |
 //                        |      | ML  | MD  | MR  |     |     |   |     | SFT | CTL | ALT | GUI |      |
 //                        |      |     |     |     |     |     |   |     |     |     |     |     |      |
 //                                           | M2  | M1  | M3  |   |     |     |     |     |
@@ -220,6 +228,8 @@
    &trans     &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans         &trans   &trans     &trans     &trans     &trans     
                          &u_m_2     &u_m_3     &u_m_1         &trans   &trans     &trans
                         >;
+                        
+                        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>; 
                 };
                 
                 FUN {

@@ -37,7 +37,7 @@
             bindings = <&kp MINUS>;
         };
         
-        combo_esc {
+        combo_gresc {
             timeout-ms = <25>;
             key-positions = <3 4>;
             bindings = <&gresc>;
@@ -97,7 +97,7 @@
             bindings = <&kp DEL>;
         };
         
-        combo_esc {
+        combo_grescs {
             timeout-ms = <25>;
             key-positions = <33 35>;
             bindings = <&gresc>;

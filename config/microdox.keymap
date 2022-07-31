@@ -97,9 +97,9 @@
             bindings = <&kp DEL>;
         };
         
-        combo_grescs {
+        combo_grescr {
             timeout-ms = <25>;
-            key-positions = <33 35>;
+            key-positions = <33 34>;
             bindings = <&gresc>;
         };  
     };

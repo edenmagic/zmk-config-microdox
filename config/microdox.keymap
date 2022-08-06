@@ -22,6 +22,9 @@
 
 #define AS(keycode) &as LS(keycode) keycode
 
+&left_encoder { resolution = <1>; };
+&right_encoder { resolution = <1>; };
+
 &lt { quick_tap_ms = <140>; };
 
 &sk {
@@ -164,7 +167,7 @@
                      &lt MEDIA DEL  &lt FUN TAB &lt NUM BSPC  &lt MOUSE SPACE &lt NAV RET  &lt BT ESC
                         >;
                 
-                sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>; 
+                sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>; 
                         
                 };
                 BT {

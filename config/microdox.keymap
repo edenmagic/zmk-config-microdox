@@ -138,14 +138,14 @@
         };   
     }; 
 };
- 
-/{
-   macros {
-      ZMK_MACRO(u_m_1, wait-ms = <0>; bindings = <&kp KP_SLASH &kp KP_N5>;)
-      ZMK_MACRO(u_m_2, wait-ms = <0>; bindings = <&kp KP_MINUS &kp KP_N5>;)
-      ZMK_MACRO(u_m_3, wait-ms = <0>; bindings = <&kp KP_ASTERISK &kp KP_N5>;)
-    };  
- };    
+
+&mmv {
+    time-to-max-speed-ms = <500>;
+};
+
+&mwh {
+    acceleration-exponent=<1>;
+};
 
 /{
     keymap {

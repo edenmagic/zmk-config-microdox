@@ -22,8 +22,8 @@
 
 #define AS(keycode) &as LS(keycode) keycode
 
-&left_encoder { resolution = <1>; };
-&right_encoder { resolution = <1>; };
+&left_encoder { resolution = <2>; };
+&right_encoder { resolution = <2>; };
 
 &lt { quick_tap_ms = <140>; };
 

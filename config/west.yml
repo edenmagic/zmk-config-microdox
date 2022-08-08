@@ -6,8 +6,6 @@ manifest:
       url-base: https://github.com/krikun98
     - name: ftc
       url-base: https://github.com/ftc
-    - name: stephen
-      url-base: https://github.com/stephen
   
   projects:
     - name: zmk

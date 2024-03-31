@@ -35,7 +35,7 @@
         compatible = "zmk,combos";
         combo_min {
             timeout-ms = <25>;
-            key-positions = <2 3>;
+            key-positions = <4 14>;
             bindings = <&kp MINUS>;
         };
         
@@ -60,7 +60,7 @@
        
         combo_eql {
             timeout-ms = <25>;
-            key-positions = <6 7>;
+            key-positions = <5 15>;
             bindings = <&kp EQUAL>;
         };
         
@@ -236,8 +236,8 @@
 //                                           | M2  | M1  | M3  |   |     |     |     |     |
                         bindings = <
    &kp KP_NUM       &mkp RCLK      &mmv MOVE_UP     &mkp LCLK         &trans         &trans   &trans     &trans     &trans     &trans     
-   &trans           &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &trans         &trans   &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI   
-   &mwh SCROLL_LEFT &mwh SCROLL_UP &mwh SCROLL_DOWN &mwh SCROLL_RIGHT &trans         &trans   &trans     &trans     &trans     &trans     
+   &trans           &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &mkp MB4       &trans   &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI   
+   &mwh SCROLL_LEFT &mwh SCROLL_UP &mwh SCROLL_DOWN &mwh SCROLL_RIGHT &mkp MB5       &trans   &trans     &trans     &trans     &trans     
                                    &mkp RCLK        &mkp MCLK         &mkp LCLK      &trans   &trans     &trans
                         >;
                         

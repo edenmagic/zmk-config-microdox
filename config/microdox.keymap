@@ -29,21 +29,35 @@
     quick-release;
     /delete-property/ ignore-modifiers;
 };
+/ {
+    macros {
+         ZMK_MACRO(macro_email,
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings
+                = <&macro_tap &kp C &kp H &kp E &kp U &kp N &kp G &kp DOT &kp E &kp D &kp E &kp N &kp DOT &kp L &kp A &kp W>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp N2>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>
+                ;
+        )
+    };
+};
 
 /{
     combos {
         compatible = "zmk,combos";
         combo_min {
             timeout-ms = <25>;
-            key-positions = <4 14>;
+            key-positions = <3 13>;
             bindings = <&kp MINUS>;
         };
         
         combo_gresc {
             timeout-ms = <25>;
-           
             key-positions = <23 24>;
-            bindings = <&gresc>;
+            bindings = <&kp ESC>;
         };
         
         combo_caps {
@@ -60,7 +74,7 @@
        
         combo_eql {
             timeout-ms = <25>;
-            key-positions = <5 15>;
+            key-positions = <6 16>;
             bindings = <&kp EQUAL>;
         };
         
@@ -105,6 +119,12 @@
             key-positions = <33 34>;
             bindings = <&gresc>;
         };  
+        combo_email {
+            timeout-ms = <25>;
+            key-positions = <25 26>;
+            bindings = <&macro_email>;
+        };
+
     };
 };
 
@@ -216,12 +236,12 @@
 // -----------------------------------------------------------------------------------------
 //                           |     | HOME|  UP | END | INS |   |     |     |     |     |     |  
 //                           |     | LEFT| DOWN|RIGHT| CAPS|   |     | SFT | CTL | ALT | GUI |   
-//                           |     | PGUP| PGDN|     |PSCRN|   |     |     |     |     |     | 
+//                           |     | PGUP| PGDN| SLCK| NUML|   |     |     |     |     |     | 
 //                                       |     |     |     |   |     |     |     |     
                         bindings = <
    &trans    &kp HOME   &kp UP     &kp END    &kp INS        &trans   &trans     &trans     &trans     &trans    
    &trans    &kp LEFT   &kp DOWN   &kp RIGHT  &kp CAPS       &trans   &kp RSHFT  &kp RCTRL  &kp RALT   &kp RGUI 
-   &trans    &kp PG_UP  &kp PG_DN  &trans     &kp PSCRN      &trans   &trans     &trans     &trans     &trans   
+   &trans    &kp PG_UP  &kp PG_DN  &kp SLCK   &kp KP_NUM     &trans   &trans     &trans     &trans     &trans   
                         &trans     &trans     &trans         &trans   &trans     &trans
                         >;
                         
